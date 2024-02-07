@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contChat {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 24px;
+    padding: 2rem;
+}
+
+.contChat h1{
+    letter-spacing: 4px;
+}
+
+.contChat h2, h3 {
+    margin: 5px;
+}
+
+.contChat p {
+    color: #2b4c7e;
+}
+
+.contMessages {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid;
+    text-align: center;
+    width: 18em;
+    height: 16em;
+    overflow: auto;
+    padding: 15px 15px 15px 15px;
+    border-radius: 10px;
+}
+
+.textarea {
+    min-width: 8em;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-top: 1em;
+}
+
+.btnChat {
+    margin: 1em;
+    background-color: #0f132e;
+    color: azure;
+    border: none;
+    font-size: 1.2em;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.inputChat {
+    margin: 1.5em;
+}
