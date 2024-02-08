@@ -51,29 +51,26 @@ const ChatComponent = () => {
   return (
     <div className={styles.contChat}>
       <h1>Chat Global</h1>
-      <p>
-        {isConnected ? "Estas conectado al Chat" : "No estas conectado al Chat"}
+      <p className={styles.conectState}>
+        {isConnected ? "* Estas conectado al Chat *" : "* No estas conectado al Chat *"}
       </p>
       <div className={styles.contMessages}>
         {mensajes.map((mensaje) => (
-          <li key={mensaje}>
-            {mensaje.usuario}: {mensaje.mensaje}
-          </li>
+          <p key={mensaje}>
+            * {mensaje.usuario}: {mensaje.mensaje}
+          </p>
         ))}
       </div>
-      <textarea
-        className={styles.textarea}
-        rows="4"
-        cols="33"
+      <input
+        className={styles.inputChat}
         placeholder="Escriba lo que guste"
         id="inputChat"
         type="text"
         onChange={(e) => setNuevoMensaje(e.target.value)}
       />
       <button className={styles.btnChat} onClick={enviarMensaje}>
-        Enviar
+        Enviar Mensaje
       </button>
-      <h3>Quieres entrar a una room chat</h3>
       <h3>Ingresa el codigo de la room </h3>
       <input className={styles.inputChat} id="goRoom" type="text"></input>
       <button className={styles.btnChat} onClick={GoRoom}>

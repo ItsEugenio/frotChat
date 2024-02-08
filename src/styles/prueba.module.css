@@ -3,6 +3,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+   background-color: #f0f9ff;
 }
 
 .div {
@@ -24,14 +25,22 @@ body {
 
 .contChat h1{
     letter-spacing: 4px;
+    font-weight: bold;
+    color: #404efa;
 }
 
 .contChat h2, h3 {
     margin: 5px;
 }
 
-.contChat p {
-    color: #2b4c7e;
+.conectState{
+    border: 1px solid;
+    border-radius: 3px;
+    background-color: rgba(0, 118, 182, 0.682);
+    border: none;
+    padding: 5px;
+    color: #00f7ff;
+    text-shadow: 2px 2px 4px #00f7ff;
 }
 
 .contMessages {
@@ -45,6 +54,13 @@ body {
     overflow: auto;
     padding: 15px 15px 15px 15px;
     border-radius: 10px;
+    background-color: #819cfc95;
+    scrollbar-color: #0f132e #ffffff ;
+}
+.contMessages p{
+    color:#00070b;
+    margin: 3px 3px 3px 3px;
+    font-weight: bold;
 }
 
 .textarea {
@@ -55,18 +71,28 @@ body {
     border-radius: 10px;
     margin: 10px;
     margin-top: 1em;
+
 }
 
 .btnChat {
     margin: 1em;
-    background-color: #0f132e;
-    color: azure;
+    background-color: #0ca3f8;
+    color: #000000;
     border: none;
     font-size: 1.2em;
     border-radius: 5px;
     padding: 10px;
+    font-weight: bold;
+    transition: .5s all ease;
+}
+.btnChat:hover{
+    transform: scale(1.1);
 }
 
 .inputChat {
     margin: 1.5em;
+    width: 20em;
+    text-align: center;
+    height: 2em;
+    border-radius: 5px;
 }
